@@ -457,3 +457,163 @@ footer p:nth-child(2){
     background-color: #101010;
     
 }
+
+
+.cont1{
+    margin: 40%;
+    margin-left: 5%;
+    margin-bottom: 30%;
+    padding: 10%;
+}
+
+
+
+ul li .cont1{
+
+    bottom: 55px;
+    width: 200px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+ul li .cont1:before{
+
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.397);
+    top: -15px;
+    left: 190px;
+    transform: rotate(45deg);
+}
+
+ul li:hover .cont1{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%) translateY(0px);
+
+}
+
+
+ul li .cont1{
+
+    position: absolute;
+    bottom: 85px;
+    width: 350px;
+    background: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+ul li .cont1:before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    bottom: -15px;
+    left: 120px;
+    transform: rotate(45deg);
+}
+
+
+
+
+ul li:hover .cont1{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%) translateY(0px);
+
+}
+
+
+
+
+
+
+
+
+.cont2{
+    margin: 45%;
+    margin-left: 5%;
+    margin-bottom: 25%;
+    padding: 10%;
+}
+
+ul li .cont2{
+
+    bottom: 55px;
+    width: 200px;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+ul li .cont2:before{
+
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.397);
+    top: -15px;
+    left: 190px;
+    transform: rotate(45deg);
+}
+
+ul li:hover .cont2{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%) translateY(0px);
+
+}
+
+
+ul li .cont2{
+
+    position: absolute;
+    bottom: 85px;
+    width: 350px;
+    background: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+ul li .cont2:before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    bottom: -15px;
+    left: 120px;
+    transform: rotate(45deg);
+}
+
+
+
+
+ul li:hover .cont2{
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%) translateY(0px);
+
+}
