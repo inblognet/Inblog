@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inblognt-search</title>
+    <script src="https://kit.fontawesome.com/2191c6f958.js" crossorigin="anonymous"></script>
+    <!-- Google Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <center>
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search the vehicle name here...."
+        />
+        <button id="search"><span class="material-symbols-outlined">search</span></button>
+      </div>
+      
+
+      </center>
+      <div id="products"></div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+
+    <section>
+      <center>
+        <div id="buttons">
+          <button class="button-value" onclick="filterProduct('all')">All</button>
+          <button class="button-value" onclick="filterProduct('catgory1')">
+            Audi-car
+          </button>
+          <button class="button-value" onclick="filterProduct('catgory2')">
+            BMW-car
+          </button>
+          <button class="button-value" onclick="filterProduct('catgory3')">
+            Honda-car
+          </button>
+          <button class="button-value" onclick="filterProduct('catgory4')">
+            Hybrid cars
+          </button>
+        </div>
+      </center>
+    </section>
+
+    <footer>
+      <p>Inblognt.online</p>
+      <p>stay tunned.. with us we will update this site to next-lvl web page thanks for being you'slf.....
+      </p>
+      <div class="social">
+          <a href="https://www.facebook.com/sisil.milantha.1/"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.instagram.com/izangi.chan/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.youtube.com/channel/UC02b-wQteOhizXBxIF18xBw"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <p class="end">@Allrights revesed to inblognt.online</p>
+
+  </footer>
+  
+
+  <div id="progressbar"></div>
+  <div id="scrollpath"></div>
+
+  
+  </body>
+</html>
