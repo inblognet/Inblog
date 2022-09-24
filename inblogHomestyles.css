@@ -278,6 +278,8 @@ button:hover{
     justify-content: center;
     align-items: center;
     min-height: 400px;
+    color: #000;
+    background-color: #191919;
 
 }
 
