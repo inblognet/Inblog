@@ -356,8 +356,8 @@ footer{
   }
   
   .social a{
-    width: 45px;
-    height: 45px;
+    width: 25px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
