@@ -1,7 +1,7 @@
 
 
 .wrapper {
-  position:absolute;
+  position:fixed;
   top: 37%;
   width: 25%;
   margin: 10% ;
