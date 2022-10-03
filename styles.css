@@ -740,6 +740,11 @@ ul li:hover .cont2{
     .wrapper{
         display: none;
     }
+    .pagetext{
+        margin-left: 15%;
+
+    }
+
 
 
 }
