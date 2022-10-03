@@ -7,6 +7,7 @@
                  
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="stylecookie.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <script src="https://kit.fontawesome.com/2191c6f958.js" crossorigin="anonymous"></script>
@@ -32,6 +33,45 @@
         </div>
 
         <div class="content">
+            
+            
+             <div id="Mydiv" class="wr">
+                <div class="contt">
+                  <p>🍪This website use cookies to ensure you get the best experience on our website.</p>
+                  <div class="buttons">
+                    <button id="divhide" class="item">Allow</button>
+                    <a href="https://inblognt.online/inblognt/Infeedback/InFeedBack2.html" class="item">Learn more</a>
+                  </div>
+                </div>
+              </div>
+
+            <script>
+                $(document).ready(function(){
+                    $("#divhide").click(function(){
+                        $("#Mydiv").css("display","none");
+                    })
+                })
+              </script>
+    
+              <script>
+                const cookieBox = document.querySelector(".wrapper"),
+                acceptBtn = cookieBox.querySelector("button");
+            
+                acceptBtn.onclick = ()=>{
+                  //setting cookie for 1 month, after one month it'll be expired automatically
+                  document.cookie = "CookieBy=CodingNepal; max-age="+60*60*24*30;
+                  if(document.cookie){ //if cookie is set
+                    cookieBox.classList.add("hide"); //hide cookie box
+                  }else{ //if cookie not set then alert an error
+                    alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+                  }
+                }
+                let checkCookie = document.cookie.indexOf("CookieBy=CodingNepal"); //checking our cookie
+                //if cookie is set then hide the cookie box else show it
+                checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+              </script>            
+     
+            
 
         <div class="container">
             <div class="navbar">
