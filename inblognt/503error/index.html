@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<hmtl>
+    <head>
+        <meta charset="utf-8">
+        <title>503 Error maintenace</title>
+        <link rel="stylesheet" type="text/css" href="/inblognt/503error/503style.css">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="Soon">
+            <h1>503.Error pleaes wait until finish updating</h1>
+            <br>
+            <h2>Inblognt.online</h2>
+            <br>
+            <br>
+            <a id="launch" href="https://inblognt.online/"></a>
+            <p>🛠The website is in maintenace mode</p>
+            <p>We have done all the technical improvements and will back very soon. Thank you for your patience!</p>
+            </div>
+        </header>
+    </body>
+    
+    
+    
+    <script>
+    
+        var countDownDate = new Date ("October 5, 2022 19:05:0").getTime();
+
+        var x = setInterval(function() {
+
+        var now = new Date ().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor (distance /(1000*60*60*24));
+         var hours = Math.floor ((distance % (1000*60*60*24)) / (1000*60*60));
+          var minutes = Math.floor ((distance % (1000*60*60)) / (1000*60));
+           var seconds = Math.floor ((distance % (1000*60)) / 1000);
+
+document.getElementById("launch").innerHTML=days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+    
+    if (distance < 0) {
+    clearInterval(x);
+    document.getElementById('launch').innerHTML="Click here";
+    }
+            
+}, 1000);
+    
+    </script>
+</hmtl>
