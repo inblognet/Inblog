@@ -2,14 +2,16 @@
 
 .wr{
   position: fixed;
-  top: 10px;
-  right: 40%;
-  max-width: 555px;
+  top: 0px;
+  right: 30%;
+  max-width: 750px;
+  max-height: 130px;
   background-color: #2B1B17;
-  padding: 15px 15px 25px 15px;
+  padding: 10px 10px 20px 10px;
   border-radius: 15px;
   box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
   text-align: center;
+
 }
 .wr.hide{
   opacity: 0;
@@ -42,7 +44,7 @@
   justify-content: center;
 }
 .buttons button{
-  padding: 10px 20px;
+  padding: 5px 20px;
   border: none;
   outline: none;
   color: #fff;
@@ -58,11 +60,12 @@
 }
 .buttons .item{
   margin: 0 10px;
-  width: 50%;
+  width: 20%;
 }
 .buttons a{
   color: #FCBA7F;
-  width: 50%;
+  width: 20%;
+  padding: 5px 20px;
 }
 
 
