@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+      <link rel="stylesheet" href="styleMenubar.css"/>
+      <link rel="stylesheet" href="stylex.css"/>
+      <link rel="stylesheet" href="stylecookie.css"/>
+      <link rel="stylesheet" href="css/style.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://kit.fontawesome.com/2191c6f958.js" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    
+      <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet"
+      />
+
+   </head>
+   <body>
+
+        <div class="loader">
+            <div></div>
+            <h1 class="pagetext">⚙️please wait a moment....</h1>
+            <center>
+                <img src="https://cdn.dribbble.com/users/563824/screenshots/3731626/infinity_3.gif" width="30%" height="30%">
+            </center>
+
+            
+        </div>
+
+    <div class="conten">
+
+
+        <div id="Mydiv" class="wr">
+            <div class="contt">
+            <p>🍪This website use cookies to ensure you get the best experience on our website.</p>
+            <div class="buttons">
+                <button id="divhide" class="item">Allow</button>
+                <a href="https://inblognt.online/inblognt/Infeedback/InFeedBack2.html" class="item">Learn more</a>
+            </div>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                $("#divhide").click(function(){
+                    $("#Mydiv").css("display","none");
+                })
+            })
+        </script>
+
+        <script>
+            const cookieBox = document.querySelector(".wrapper"),
+            acceptBtn = cookieBox.querySelector("button");
+        
+            acceptBtn.onclick = ()=>{
+            //setting cookie for 1 month, after one month it'll be expired automatically
+            document.cookie = "CookieBy=CodingNepal; max-age="+60*60*24*30;
+            if(document.cookie){ //if cookie is set
+                cookieBox.classList.add("hide"); //hide cookie box
+            }else{ //if cookie not set then alert an error
+                alert("Cookie can't be set! Please unblock this site from the cookie setting of your browser.");
+            }
+            }
+            let checkCookie = document.cookie.indexOf("CookieBy=CodingNepal"); //checking our cookie
+            //if cookie is set then hide the cookie box else show it
+            checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
+        </script>
+
+
+    <div class="contain" id="tabshome">
+        <div class="navbar">
+      <nav>
+         <div class="logo">
+            Inblognt.online
+         </div>
+         <input type="checkbox" id="click">
+         <label for="click" class="menu-btn">   
+         <i class="fas fa-bars"></i>
+         </label>
+         <ul>
+                <li><a class="active" href="https://inblognt.online/inblognt/Inlogin/InLogin.html">Home</a></li>
+                <li><a class="active" href="https://inblognt.online/inblognt/about-us/Inaboutus.html">About</a></li>
+                <li><a class="active" href="https://www.patreon.com/user?u=52600963">Support</a></li>
+                <li><a class="active" href="https://inchat2022.000webhostapp.com/index.php">Inchat</a></li>
+                <li><a class="active" href="https://inblognt.online/inblognt/Infeedback/InFeedBack2.html">help</a></li>
+         </ul>
+      </nav>
+    </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h2>Top 10 <br>Affordable New vehicles</h2>
+                <h3>The best vehicales With Prices and Specs </h3>
+                <p>(inblognt.online)</p>
+                <h4></h4>
+                <a class="abtn" href="index.html#tabs1">Readmore ...</a>
+
+
+            </div>
+            <div class="col-2">
+                <img src="images/kindpng_7496921.png" class="carsgroup" data-aos="fade-left">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="">
+                    <p></p> 
+                </div>
+            </div>
+        </div>
+
+        <div class="headlayer" id="tabs1" data-aos="fade">
+            <h4><span2>Latest affordable Car Models in 2022 prices and specifications</span2></h4>
+            <img src="images\Honda_CR_V_Hybrid_Sport_Touring_2023_1.jpg" width="790" height="470">
+            <h4><span1>Honda CR-V Hybrid Sport Touring 2023</span1></h4>
+            <br>
+            <h3> Description </h3>
+            <p>A whole new look inside and out awaits the 2023 Honda CR-V Hybrid Sport Touring, ready   
+                to take on the brutally competitive compact SUV segment.With larger proportions and 
+                additional passenger space,the updated CR-V promises to deliver even more of its trademark 
+                practicality.An attractive interior design is complemented by modern technology,
+                including an infotainment system with an available 9.0-inch touchscreen with Apple CarPlay
+                and Android Auto.</p>
+            <div>            
+                <div class="ytvideo">
+                    <iframe width="740" height="480" src="https://www.youtube-nocookie.com/embed/SeG1bRmWNTE?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <br>
+                <h3> Specifications </h3>
+                <p2>
+                    <br> ➥ Engine Type-2.0L Inline-4 Hybrid
+                    <br> ➥ Drive Type-All-Wheel Drive
+                    <br> ➥ Body Type-SUVs
+                    <br> ➥ Price in LKR:12,289,900/USD:$33,950
+                </p2>
+                <hr>
+                
+                <br>
+                <a class="abtn" href="index.html#tabs2">Readmore ...</a>
+
+            </div>
+        </div>
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-c5d763d6-da3d-4487-bf97-03126ca6b797"></div>
+
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-9bb11d80-318a-4061-9d0d-359650b81f06"></div>
+        
+
+
+
+<div class="headlayer" id="tabs2" data-aos="fade-left">
+    <img src="images/Toyota_Vellfire_2022.jpg" width="790" height="470">
+    <h4><span1>Toyota Vellfire 2022</span1></h4>
+    <br>
+    <h3> Description </h3>
+    <p>Toyota Vellfire 2022 price in Sri Lanka is LKR 42,292,460 2022 Toyota Vellfire is powered by a Gasoline Hybrid and E-FOUR engine that produces 115.32bhp@4700rpm. Max Power and 198nm@2800-4000rpm of torque.You can compare Toyota Vellfire 2022 Prices. Features and Specs with up to 3 products. The Vellfire 2022 has all-wheel drive and a six-speed automatic transmission.</p>
+    <div>         
+        <div class="ytvideo">
+        <iframe  width="740" height="480" src="https://www.youtube-nocookie.com/embed/XYy-v3_4K1Q?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>        
+        <br>
+        <h3> Specifications </h3>
+        <p2> 
+        <br> ➥ Engine Type-Gasoline Hybrid and E-FOUR
+        <br> ➥ No. Of Cylinders-4 Cylinder
+        <br> ➥ Body Type-Van
+        <br> ➥ Price in LKR:42,292,460/USD:$116,830
+        </p2>
+        <hr>
+        <br>
+        <a class="abtn" href="index.html#tabs3">Readmore ...</a>
+
+    </div>
+
+
+</div>
+
+<div class="headlayer" id="tabs3" data-aos="fade-right">
+    <img src="images/Nissan_Leaf_30kWh_2022.jpg" width="790" height="470">
+    <h4><span1>Nissan Leaf 30kWh 2022</span1></h4>
+    <br>
+    <h3> Description </h3>
+    <p>The 2022 Nissan Leaf 30kWh is powered by an electric engine with 80 kW (109 hp) of horsepower and 254 lb/ft of torque. Front-wheel drive and automatic transmission are standard. Nissan Leaf 30kWh 2022 Price in Sri Lanka, Specifications, Features and Compare Nissan Leaf 30kWh 2022 Prices Features and Detail Specs with Upto 3 Products.
+    </p>
+    <div>            
+        <div class="ytvideo">
+            <iframe width="740" height="480" src="https://www.youtube-nocookie.com/embed/pM_2ThPIDjo?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
+        </div>
+        <br>
+        <h3> Specifications </h3>
+        <p2>
+            <br> ➥ Engine Type-Electric
+            <br> ➥ Maximum Speed-144 km/h
+            <br> ➥ Body Type-Hatchback
+            <br> ➥ Price in LKR:15,620,300/USD:$43,150
+        </p2>
+        <hr>
+        <br>
+        <a class="abtn" href="index.html#tabs4">Readmore ...</a>
+
+    </div>
+
+</div>
+
+<div class="headlayer" id="tabs4" data-aos="fade-left">
+    <img src="images/Kia-Forte-GT-Manual-2022.jpg" width="790" height="470">
+    <h4><span1>KIA Forte GT Manual 2022</span1></h4>
+    <br>
+    <h3> Description </h3>
+    <p>The Kia Forte GT Manual 2022 is a 5-seater sedan from Sri Lanka with a 6-speed manual gearbox. Inside this car is a 1.6-liter turbocharged inline 4-cylinder petrol engine. The sedan offers 201 hp at 6000 rpm and 195 lb-ft of torque at 1500 rpm. A 14-gallon fuel tank allows passengers to get a combined fuel economy of 22 MPG city, 31 MPG highway, and 26 MPG. As usual, you can enjoy a comfortable drive with rack and pinion steering. The swing diameter is 34.8 feet, the front suspension is a strut, the rear is a multi-link suspension, and the size (front and rear 18 inches x 8 inches) and type (front and rear P225/40HR18) aluminum wheels are installed. It has a compact spare tire. A sedan emits 6.8 tonnes of CO2 per year.</p>
+    <div>         
+        <div class="ytvideo">
+            <iframe width="740" height="480"  src="https://www.youtube-nocookie.com/embed/eKxOyzhZmm8?start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        <br>
+        <h3> Specifications </h3>   
+        <p2>
+            <br> ➥ Engine Type-Petrol
+            <br> ➥ Engine Power-201 hp @ 6000 rpm
+            <br> ➥ Transmission Type- Manuel
+            <br> ➥ Price in LKR:8,865,380/USD:$24,490
+        </p2>
+        <hr>
+        <br>
+        <a class="abtn" href="index.html#tabs5">Readmore ...</a>
+
+    </div>
+</div>
+
+<div class="headlayer" id="tabs5" data-aos="fade-right">
+    <img src="images/Mercedes_Benz_EQS_SUV_450_Plus_2023.jpg" width="790" height="470">
+    <h4><span1>Mercedes Benz EQS SUV 450 Plus 2023</span1></h4>
+    <br>
+    <h3> Description </h3>
+    <p>The 2023 Mercedes-Benz EQS SUV 450 Plus is Sri Lanka's upcoming car. The Mercedes-Benz EQS SUV 450 Plus features a powerful electric motor producing 355 hp and 419 lb-ft of torque in a rear-wheel drive single speed transmission. All  information on this page is unofficial but  official Mercedes-Benz EQS SUV 450 Plus  Sri Lanka specs, features and prices will be updated after  official launch.</p>
+    <div>      
+        <div class="ytvideo">
+            <iframe width="740" height="480" src="https://www.youtube-nocookie.com/embed/NJEk3hnrm_Y?start=9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        <br>
+        <h3> Specifications </h3>      
+        <p2>
+            <br> ➥ Engine Type-Gasoline Hybrid and E-FOUR
+            <br> ➥ Transmission Type-Single-speed Automatic
+            <br> ➥ Body Type-Suv
+            <br> ➥ Price in LKR:37,398,220/USD:$103,310
+        </p2>
+        <hr>
+        <br>
+        <a class="abtn" href="index.html#tabs6">Readmore ...</a>
+
+    </div>
+</div>
+<div class="headlayer" id="tabs6" data-aos="fade-left">
+    <img src="images/Mazda_3_Sedan_Select_2022.jpg" width="790" height="470">
+    <h4><span1>Mazda 3 Sedan Select 2022</span1></h4>
+    <br>
+    <h3> Description </h3>
+    <p>The 2022 Mazda 3 Sedan Select FWD is powered by a 2.5-liter inline-4 petrol engine that delivers 186 hp and 186 lb/ft of torque. It has front-wheel drive and a 6-speed AT. Check the latest mazda 3 sedan select 2022 price and detailed specs, features in Sri Lanka and compare mazda 3 sedan select 2022 price features and detailed specs up to 3 products</p>
+    <div>    
+        <div class="ytvideo">
+            <iframe  width="740" height="480" src="https://www.youtube.com/embed/F8tvWDQYs9U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        <br>
+        <h3> Specifications </h3>     
+        <p2>
+            <br> ➥ Engine Type-2.5L Inline-4 Gas
+            <br> ➥ Engine Power-186 hp @ 6000 rpm
+            <br> ➥ Body Type-Sedan
+            <br> ➥ Price in LKR:8,362,200/USD:$23,100
+        </p2>
+        <hr>
+        <br>
+        <a class="abtn" href="index.html#tabs7">Readmore ...</a>
+
+    </div>
+</div>
+<div class="headlayer" id="tabs7" data-aos="fade-right">
+    <img src="images/Volvo_XC60_Recharge_T8_Plus_Dark_Theme_Plug-In_Hybrid_2023.jpg" width="790" height="470">
+    <h4><span1>Volvo XC60 Recharge T8 Plus Dark Theme Plug-In Hybrid 2023</span1></h4>
+    <br>
+    <h3> Description </h3>
+    <p>The 2023 Volvo XC60 Recharge T8 eAWD PHEV Plus Dark Theme is a 5-seater SUV from Sri Lanka that is working on an 8-speed automatic transmission and 4-wheel drive. Equipped with a 2.0L straight 4 plug-in hybrid turbo engine. At 6000 rpm the SUV puts out 455 horsepower and 523 lb-ft of torque.  18.8 gallon fuel tank, 8 hour charge time at 110/120V, 5 hour charge time at 220/240V, 18.8 kWh battery size. As before, the rack and pinion steering provides a comfortable ride. 37.4 ft swing diameter, double wishbone front suspension, multi-link rear suspension, aluminum wheels in size (front and rear 19” x 7.5”) and type (front and rear P235/55VR19). It has a compact spare tire.</p>
+    <div>   
+        <div class="ytvideo">
+            <iframe width="740" height="480" src="https://www.youtube-nocookie.com/embed/5zdA7kjTDBI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+
+        </div>
+        <br>
+        <h3> Specifications </h3>
+        <p2>
+            <br> ➥ Engine Type-2.0L Turbo Inline-4 Plug-in Hybrid
+            <br> ➥ Engine Power-455 hp @ 6000 rpm
+            <br> ➥ No. Of Cylinders -4
+            <br> ➥ Price in LKR:22,244,900/USD:$61,450
+        </p2>
+        <hr>
+        <br>
+        <a class="abtn" href="index.html#tabs8">Readmore ...</a>
+
+    </div>
+</div>
+<div class="headlayer" id="tabs8" data-aos="fade-left">
+    <img src="images/Suzuki_lgnis_Alpha_AMT_2022.jpg" width="790" height="470">
+    <h4><span1>Suzuki lgnis Alpha AMT 2022</span1></h4>
+    <br>
+    <h3> Description </h3>
+    <p> 2022 Suzuki Ignis Alpha AMT  Sri Lankan 5-Seater Hatchback. The Suzuki Ignis Alpha AMT features his 5-speed manual gearbox with front-wheel drive and a VVT engine that develops 81.80 hp at 6000 rpm and 113 Nm of torque at 4200 rpm.</p>
+    <div>
+        <div class="ytvideo">
+            <iframe width="740" height="480" src="https://www.youtube-nocookie.com/embed/MKYyKfwd33c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+
+        </div>
+        <br>
+        <h3> Specifications </h3>    
+        <p2>
+            <br> ➥ Engine Power-81.80bhp@6000rpm
+            <br> ➥ No. Of Cylinders-4 Cylinder
+            <br> ➥ Body Type-VTT
+            <br> ➥ Price in LKR:3,511,400/USD:$9,700
+        </p2>
+        <hr>
+        <br>
+        <a class="abtn" href="index.html#tabs9">Readmore ...</a>
+
+    </div>
+</div>
+<div class="headlayer" id="tabs9" data-aos="fade-right">
+    <img src="images/Land_Rover_Range_Rover_4_4_I_Petrol_SE_2022.jpg" width="790" height="470">
+    <h4><span1>Land Rover Range Rover 4.4 I Petrol SE 2022</span1></h4>
+    <br>
+    <h3> Description </h3>
+    <p> 2022 Land Rover Range Rover 4.4 I Petrol SE a 5-seater SUV in Sri Lanka. Land Rover Range Rover 4.4 I Petrol SE is powered by a 4395 cc engine that is good for 345.98bhp@4000-4000rpm horsepower and 700nm@1500-3000rpm of torque with a All-wheel drive 9-Speed Automatic transmission. </p>
+    <br>
+    <h3>safety</h3>
+    <p>Driver airbag, front curtain airbag, front side airbag, knee airbag, passenger airbag, rear curtain airbag, back camera, rear parking assist, blind spot monitor, ABS, tire pressure monitor, brake assist, star mobility control, traction control.</p>
+    <div>    
+        <div class="ytvideo">
+            <iframe width="740" height="480" src="https://www.youtube-nocookie.com/embed/VUG5HNS8YYM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+        <br>
+        <h3> Specifications </h3>     
+        <p2>
+            <br> ➥ Engine Type-Petrol
+            <br> ➥ Engine Power-345.98bhp@4000-4000rpm
+            <br> ➥ Transmission Type-Automatic
+            <br> ➥ Price in LKR:131,431,340/USD:$363,070
+        </p2>
+        <hr>
+        <br>
+        <a class="abtn" href="index.html#tabs10">Readmore ...</a>
+
+    </div>
+</div>
+<div class="headlayer" id="tabs10" data-aos="fade-left">
+    <img src="images/Jeep_Wrangler_Willys_Sport_4x4_2022.jpg" width="790" height="470">
+    <h4><span1>Jeep Wrangler Willys Sport 4x4 2022</span1></h4>
+    <br>
+    <h3> Description </h3>
+    <p> The legendary Wrangler is ready to serve the needs of a wide variety of drivers. A plug-in hybrid variant offering a zero-emission range of up to 22 miles has been added to the lineup, along with his powerful 6.4-liter V8 option that develops 470 horsepower and 470 lb-ft of torque. These two additions of his make the Wrangler stand out from its  new rival, his Ford Bronco. 2-door and 4-door body styles are still available.</p>
+    <div>    
+        <div class="ytvideo">
+            <iframe width="740" height="480" src="https://www.youtube-nocookie.com/embed/of08LF4QDTA?start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        <br>
+        <h3> Specifications </h3>        
+        <p2>
+            <br> ➥ Engine Type-3.6L V6 Gas
+            <br> ➥ Engine Power-285 hp @ 6400 rpm
+            <br> ➥ Body Type-Convertible
+            <br> ➥ Price in LKR:10,856,380/USD:$29,990
+        </p2>
+        <hr>
+        <br>
+        <a class="abtn" href="index.html#tabs11">Readmore ...</a>
+
+    </div>
+</div>
+<div class="headlayer" id="tabs11" data-aos="fade-right">
+    <img src="images/Honda_Civic_Si_Sedan_with_Summer_Tires_2022_Price.jpg" width="790" height="470">
+    <h4><span1>Honda Civic Si Sedan with Summer Tires 2022</span1></h4>
+    <br>
+    <h3> Description </h3>
+    <p>The 2022 Honda Civic Si Sedan  Summer Tire is a Sri Lankan 5 seater car that is working on a 6 speed manual gearbox and front wheel drive. Equipped with a 1.5-liter straight 4 gasoline turbo engine. The sedan offers 200 horsepower at 6000 rpm and 192 lb-ft of torque at 1800 rpm. A 12.4-gallon fuel tank allows the passenger to achieve his combined fuel economy of 27 MPG city, 37 MPG highway and 31 MPG. As before, the rack and pinion steering provides a comfortable ride. Swing diameter of 38.1 feet, strut front suspension, multi-link rear suspension, and aluminum wheels of size (front and rear 18" x 8") and type (front and rear P235/40WR18). It has a compact spare tire. A sedan emits 5.7 tons of CO2 per year.</p>
+    <div>   
+        <div class="ytvideo">
+            <iframe width="740" height="480" src="https://www.youtube-nocookie.com/embed/ORT5oC2SxIY?start=6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+        </div> 
+        <br>
+        <h3> Specifications </h3>         
+        <p2>                    
+            <br> ➥ Engine Type-Gasoline Hybrid and E-FOUR
+            <br> ➥ No. Of Cylinders-4 Cylinder
+            <br> ➥ Body Type-Van
+            <br> ➥ Price in LKR:42,292,460/USD:$116,830</p2>
+        <hr>
+        <br>
+        <a class="abtn" href="index.html#tabs12">Readmore ...</a>
+
+    </div>
+</div>
+    <div class="headlayer" id="tabs12" data-aos="fade-left">
+        <img src="images/Audi_Q3_2023.jpg" width="790" height="470">
+        <h4><span1>Audi Q3 2023</span1></h4>
+        <br>
+        <h3> Description </h3>
+        <p>2023 Audi Q3 is Sri Lanka's upcoming SUV. The Audi Q3 is powered by a 2.0-liter turbocharged inline 4-cylinder petrol engine that develops 184 hp and 221 lb/ft of torque. It has all-wheel drive and an 8-speed automatic transmission. All  information on this page is unofficial but  official Sri Lanka Audi Q3 specs, features and prices will be updated after  official launch.</p>
+        <div>   
+            <div class="ytvideo">
+                <iframe width="740" height="480" src="https://www.youtube-nocookie.com/embed/Fp06dm-Z9Xs?start=8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <br>
+            <h3> Specifications </h3>        
+            <p2>
+                <br> ➥ Engine Type-2.0L Turbo Inline-4 Gas
+                <br> ➥ No. Of Cylinders-4 Cylinder
+                <br> ➥ Engine Power-184 hp @ 4800 rpm
+                <br> ➥ Price in LKR:13,176,800/USD:$36,400
+            </p2>
+            <hr>
+            <br>
+            <a class="abtn" href="index.html#tabshome">Go up!</a>
+            <br>
+        </div>
+    </div>
+    <div>   
+
+
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>        <div>   
+
+
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>        <div>   
+
+
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>        <div>   
+
+
+        <br>
+    </div>
+    <div>
+        <br>
+    </div>
+</div>
+
+    <div class="wrapper">
+
+    <div id="search-container">
+        <div class="sizee">
+
+            <input
+            type="search"
+            id="search-input"
+            placeholder="Search the vehicle name here...." 
+            />
+            <button1 id="search">#Find</span></button1>
+        </div>
+    </div>
+    <div id="products"></div>
+
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+
+    
+<div class="social-links">
+
+
+</div>
+
+
+
+    <script>
+            var menulist = document.getElementById("menulist")
+
+            menulist.style.maxHeight="0px";
+
+            function togglemenu(){
+                if(menulist.style.maxHeight == "0px")
+                {
+                    menulist.style.maxHeight ="130px";
+
+                }
+                else
+                {
+                    menulist.style.maxHeight ="0px";
+
+                }
+            }
+    </script>
+
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
+
+
+
+
+
+
+<footer class="footer">
+    <div class="row1">
+
+        <div class="footer-col">
+            <h4>Get notify</h4>
+            <ul>
+                <li><textarea name="comment" id="" cols="30" rows="2" placeholder="Enter your email to notify"></textarea></li>
+                <li> <button>submit</button></li>
+                <li><a  href="#"></a></li>
+                <li><a  href="#"></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Inblognt.online</h4>
+            <ul>
+                <li><a  href="https://inblognt.online/inblognt/about-us/Inaboutus.html">about us</a></li>
+                <li><a  href="">our services</a></li>
+                <li><a  href="https://inblognet.github.io/503error-maintenance/">privacy policy</a></li>
+                <li><a  href="https://inblognet.github.io/503error-maintenance/">site updates</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+                <li><a  href="https://inblognt.online/inblognt/Infeedback/InFeedBack2.html">FAQ</a></li>
+                <li><a  href="https://www.patreon.com/user?u=52600963">✉Peatron</a></li>
+                <li><a  href="https://github.com/inblognet">ⒼitHub</a></li>
+                <li><a  href="https://web.whatsapp.com/">☎ +94704198479</a></li>  
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>about-us</h4>
+            <ul>
+                <li><a  href=""></a></li>
+                <li>
+                <h12>We are trying to provided best possible Car prices and detailed features,
+                Specs, but we cannot guarantee all information's are 100% correct.</h12>
+                </li>
+                <li><a  href="https://inblognet.github.io/503error-maintenance/"></a></li>
+                <li><a  href="https://inblognet.github.io/503error-maintenance/"></a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+                <a href="https://www.facebook.com/sisil.milantha.1/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/Inblognt"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/izangi.chan/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/kishu-dilantha-342999252/"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>  
+    </div>
+</div>
+</footer>
+
+
+    <script>
+        $(window).on('load',function(){
+            $(".loader").fadeOut(1000);
+            $(".conten").fadeIn(1000);
+        });
+    </script>
+
+   </body>
+</html>
