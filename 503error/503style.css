@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(bgscreen503.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.Soon{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-family: 'Fira Sans', sans-serif;
+}
+h1{
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+hr{
+    width: 50%;
+    margin: 30px auto;
+    border: 1.5px solid #fff;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+#launch{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    border-width: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
