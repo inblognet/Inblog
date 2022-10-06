@@ -181,19 +181,21 @@ button:hover{
 }
 
 
-
 a{
-
-  width: 140px;
-  border: 0;
-  padding: 10px 10px;
-  outline: none;
-  color: #ffff;
-  background-color: #0003c4;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: width 0.5s;
+  display: flex;
+  width: 150px;
   text-decoration: none;
+  padding: 5px 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: #0003c4;
+  cursor: pointer;
+  transition: all 0.5s ease;
+
 
 }
 
@@ -215,13 +217,8 @@ a:hover img{
 
 
 a:hover{
-  width: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  outline: none;
+  transform: scale(0.9);
 }
-
 
 
 .col-1::after{
