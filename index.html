@@ -41,6 +41,100 @@
       />
 
    </head>
+   
+   
+<style>
+
+@keyframes fade{
+  from{
+    opacity:0.8;
+  }
+  to{
+    opacity:2;
+  }
+}
+
+
+#slider{
+  margin:0 auto;
+  width:80%;
+  overflow:hidden;
+}
+
+.slides{
+  overflow:hidden;
+  animation-name:fade;
+  animation-duration:1s;
+  display:none;
+}
+
+.imgcars2{
+  width:30%;
+}
+
+#dot{
+  margin:0 auto;
+
+}
+.dot{
+  display:inline-block;
+  border-radius:50%;
+  background:#d3d3d3;
+  padding:8px;
+  margin:10px 5px;
+}
+
+.active{
+  background:black;
+}
+
+h13{
+    color: rgb(51, 129, 43);
+}
+
+span{
+    font-size: 2px;
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+h1{
+    margin-top: 5%;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+@media (max-width:567px){
+  #slider{
+    width:50%;
+    display: none;
+
+  }
+  #heading{
+    display: none;
+  }
+
+}
+
+#heading{
+  display:block;
+  text-align:center;
+  font-size:2em;
+  margin:10px 0px;
+
+}
+
+
+</style>
+   
+   
+   
+   
    <body>
 
 
@@ -103,6 +197,88 @@
     </div>
 
         <div class="row">
+           
+               <span id="heading"></span>
+    <div id="slider">  
+    <div class="slides">
+        <h1>Honda City V MT 2022</h1>
+      <img class="imgcars2" src="https://www.ccarprice.com/products/Honda_City_V_MT_2022.jpg" width="50%" />
+      <br>
+      <h13>Price in $:14,340</h13>
+     </div>
+      
+      <div class="slides">  
+        <h1>BMW 2 Series Gran Coupe 2022</h1>
+      <img class="imgcars2" src="https://www.ccarprice.com/products/BMW_2_Series_Gran_Coupe_2022.jpg" width="50%" />
+      <br>
+      <h13>Price in $:34,650</h13>
+    </div>
+
+      <div class="slides">  
+        <h1>Hyundai Kona 2023</h1>
+      <img class="imgcars2" src="https://www.ccarprice.com/products/Hyundai_Kona_2023.jpg" width="50%" />
+      <br>
+      <h13>PPrice in $:21,990</h13>
+    </div> 
+
+       <div class="slides">  
+        <h1>Toyota Yaris Hatchback 1.5L SE Plus 2022</h1>
+      <img class="imgcars2" src="https://www.ccarprice.com/products/Toyota_Yaris_Hatchback_1.5L_SE_Plus_2022.jpg" width="50%" />
+      <br>
+      <h13>Price in $:20,710</h13>
+    </div> 
+    
+      
+    <div class="slides">  
+        <h1>Lexus ES 350 F Sport 2023</h1>
+      <img class="imgcars2" src="https://www.ccarprice.com/products/Lexus_ES_350_F_Sport_2023_1.jpg" width="50%" />
+      <br>
+      <h13>Price in $:47,800</h13>
+    </div>  
+      
+      <div id="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+     </div>
+    
+
+
+     <script>
+        var index = 0;
+var slides = document.querySelectorAll(".slides");
+var dot = document.querySelectorAll(".dot");
+
+function changeSlide(){
+
+  if(index<0){
+    index = slides.length-1;
+  }
+  
+  if(index>slides.length-1){
+    index = 0;
+  }
+  
+  for(let i=0;i<slides.length;i++){
+    slides[i].style.display = "none";
+    dot[i].classList.remove("active");
+  }
+  
+  slides[index].style.display= "block";
+  dot[index].classList.add("active");
+  
+  index++;
+  
+  setTimeout(changeSlide,4000);
+  
+}
+
+changeSlide();
+     </script>
+           
+           
+           
+           
+           
+           
+           
             <div class="col-1">
                 <h2>Top 10 <br>Affordable New vehicles</h2>
                 <h3>The best vehicales With Prices and Specs </h3>
