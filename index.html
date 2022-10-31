@@ -39,7 +39,9 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
         rel="stylesheet"
       />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.4.1/list.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.pagination.js/0.1.1/list.pagination.min.js"></script>
    </head>
    
    
@@ -189,6 +191,85 @@ h16{
   margin:10px 0px;
 
 }
+   
+   
+   .thead > div, .trow > div {
+  display: inline-flex;
+  width: 300px;
+}
+
+.pagination {
+  display: inline-flex;
+}
+
+.pagination li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-color: #eee;
+  margin: 0 2px
+}
+
+.pagination li.active {
+  background-color: lightgreen;
+}
+
+.next, .prev, .first, .last {
+  display: inline-flex;
+}
+
+img{
+    width: 100%;
+}
+
+#collect{
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.thead{
+    margin-top: 5%;
+    color:rgb(255, 255, 255);
+    background-color: rgb(116, 96, 231);
+    width: 80%;
+    height: 4vh;
+    border-radius: 6px;
+}
+.search{
+
+    font-size: 25px;
+    border-radius: 6px;
+    width: 50%;
+    height:4vh;
+}
+.pagintions{
+    margin-left: 60%;
+}
+
+.trow{ 
+    width: 80%;
+    border-radius: 6px;
+    border-color: black;
+}
+.sort{
+    background-color: rgb(25, 187, 216);
+    color: #000;
+    border-color: #eee;
+    height:3vh;
+    border-radius: 4px;
+}
+h3{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.name{
+  margin-bottom: 5%;
+}
+   
+   
 
 
 </style>
@@ -898,13 +979,6 @@ changeSlide();
 
     <div id="search-container">
         <div class="sizee">
-
-            <input
-            type="search"
-            id="search-input"
-            placeholder="Search the vehicle name here...." 
-            />
-            <button1 id="search">#Find</span></button1>
         </div>
     </div>
     <div id="products"></div>
