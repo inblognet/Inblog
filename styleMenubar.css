@@ -68,7 +68,7 @@ nav ul{
   margin-right:25% ;
   flex-wrap: wrap;
   list-style: none;
-  width:80%;
+  width:100%;
 }
 nav ul li{
   margin: 0 5px;
