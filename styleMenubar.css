@@ -50,7 +50,7 @@ html::-webkit-scrollbar-track{
 
 nav{
   display: flex;
-  height: 80px;
+  height: 85px;
   width: 100%;
   background: #0003c4;
   align-items: center;
