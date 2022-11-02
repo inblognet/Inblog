@@ -336,7 +336,6 @@ h1{
 
 
    .search{
-  background-color: #e42be4;
   color: #fff;
   font-size: 20px;
   width: 25%;
@@ -529,9 +528,11 @@ h3{
                 <li><a class="active" href="https://www.patreon.com/user?u=52600963">Support</a></li>
                 <li><a class="active" href="">Inchat</a></li>
                 <li><a class="active" href="https://inblognt.online/inblognt/Infeedback/InFeedBack2.html">help</a></li>
-                <input class="searchbar" placeholder="       serach.." type="search" id="search" value="" onchange="ouvrirPage()"><i class="fa-solid fa-magnifying-glass"></i>   
          </ul>
+         
+          <input class="searchbar" placeholder="       serach.." type="search" id="search" value="" onchange="ouvrirPage()"><i class="fa-solid fa-magnifying-glass"></i>   
       </nav>
+           
     </div>
 
         <div class="row">
@@ -640,7 +641,22 @@ function changeSlide(){
 changeSlide();
      </script>
        
-       
+   <script>
+            function ouvrirPage() {
+                var a = document.getElementById("search").value;
+
+                    //////////find///////////
+
+                if (a === "Chainsaw Man" ) {
+                    window.open("/animeSeries/chainman saw/Pindex.html");
+                }
+                else{
+                    alert("(your site apper in another page) or your serarch results is not found");
+                    window.open("https://myanimelist.net/")
+                }
+    
+            }
+        </script>    
   
 
   
